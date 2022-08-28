@@ -632,7 +632,8 @@ body {
   .cards {
 	display: flex;
 	flex-wrap: wrap;
-
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
 
   }
 
@@ -883,6 +884,8 @@ body {
 	flex-direction: row;
 	margin-bottom: 2%;
 	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
   }
   .WorldDetailContent .WorldDetailImage{
 	width: 60%;
@@ -890,10 +893,9 @@ body {
 	min-width: 270px;
   }
   .WorldDetailContent .WorldDetailDetail{
-	width: 38%;
+	width: 38% ; max-width: 500px; min-width: 250px;
 	margin-left: 2%;
-	font-size: 20px;
-	min-width: 250px
+	font-size: 20px;	
   }
   .WorldDetailContent .WorldDetailDetailHeader{
 	text-align:center;
