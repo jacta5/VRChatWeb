@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>VRChatワールド紹介サイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="VRChatワールド紹介サイト">
+<meta name="keywords" content="VRChat,ワールド,紹介,オキュラスクエスト,メタバース">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<style>
+.slide1 {background: url(images/1.jpg) no-repeat center center;}
+.slide2,.slide3 {display: none;}
+.home #container,.home #main,.home #sub {overflow: auto;}
+</style>
+<![endif]-->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+<link rel="manifest" href="/asset/favicon/site.webmanifest">
+<link rel="mask-icon" href="/asset/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="home">
+
+<div id="container">
+
+	<div id="main">
+
+		<section id="mainimg">
+
+		<h2 class="dn">お知らせ</h2>
+
+		<a href="#"><div class="slide1"><p>VRchatワールド人気ランキング。</p></div></a>
+		<a href="#"><div class="slide2"><p>VRchatワールドお気に入り数ランキング。</p></div></a>
+		<a href="#"><div class="slide3"><p>VRchatワールド急上昇ランキング。</p></div></a>
+
+		</section>
+
+	</div>
+	<!--/#main-->
+
+	<div id="sub">
+
+		<h1 class="logo"><a href="index.html"><img src="images/logo_test.png" alt="VRChat_logo"></a></h1>
+
+		<!--PC用（801px以上端末）メニュー-->
+		<nav id="menubar">
+		<ul>
+		<li class="menu1 current"><a href="index.html">Home<span>ホーム</span></a></li>
+		<li class="menu2"><a href="popularity.html">Popularity<span>人気ランキング</span></a></li>
+		<li class="menu3"><a href="favorite.html">Favorites<span>お気に入り数ランキング</span></a></li>
+		<li class="menu4"><a href="heat.html">Heat<span>急上昇ランキング</span></a></li>
+		<li class="menu5"><a href="updated.html">Updated<span>直近更新のワールド</span></a></li>
+		</ul>
+		</nav>
+
+	</div>
+	<!--/#sub-->
+
+	<!--小さな端末用（800px以下端末）環境でのみ表示させるブロック-->
+
+	<div id="sh-sub">
+
+		<h1 class="logo"><a href="index.html"><img src="images/logo_test.png" alt="VRChat_logo"></a></h1>
+
+		<!--小さな端末用（800px以下端末）メニュー-->
+		<nav id="menubar-s">
+		<ul>
+			<li class="menu1 current"><a href="index.html">Home<span>ホーム</span></a></li>
+			<li class="menu2"><a href="popularity.html">Popularity<span>人気ランキング</span></a></li>
+			<li class="menu3"><a href="favorite.html">Favorites<span>お気に入り数ランキング</span></a></li>
+			<li class="menu4"><a href="heat.html">Heat<span>急上昇ランキング</span></a></li>
+			<li class="menu5"><a href="updated.html">Updated<span>直近更新のワールド</span></a></li>
+		</ul>
+		</nav>
+
+	</div>
+	<!--/#sh-sub-->
+
+	<footer>
+		
+
+
+		<small>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<div class="snssharer">
+			<!-- Facebook -->
+			<span class="facebook"><a class="js-sns-link" href="//www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" rel="nofollow noopener noreferrer">Facebook</a>
+			</span>
+			<!-- Twitter -->
+			<span class="twitter"><a class="js-sns-link" href="//twitter.com/intent/tweet?text=&url=" target="_blank" rel="nofollow noopener noreferrer">Twitter</a>
+			</span>	
+			<!-- LINE -->
+			<span class="line"><a class="js-sns-link" href="//timeline.line.me/social-plugin/share?url=&text=" target="_blank" rel="nofollow noopener noreferrer">LINE</a>
+			</span>	
+			
+			<!-- はてなブログ -->
+			<span class="hatena"><a class="js-sns-link" href="//b.hatena.ne.jp/add?mode=confirm&url=&title=" target="_blank" rel="nofollow noopener noreferrer">はてなブログ</a>
+			</span>	
+			
+			<!-- ピンタレスト -->
+			<span class="pocket"><a class="js-sns-link" href="//www.pinterest.com/pin/create/button/?url=&media=" target="_blank" rel="nofollow noopener noreferrer">Pin it</a>
+			</span>	
+			
+			<script>
+				let url = location.href
+				let snsLinks=$(".js-sns-link")
+				for(let i=0; i<snsLinks.length; i++){
+					let href=snsLinks.eq(i).attr('href');
+				　　　//シェアページのURL上書き
+					href=href.replace("u=","u="+url)     //facebook
+					href=href.replace("url=","url="+url) //twitter,LINE,はてなブログ
+					snsLinks.eq(i).attr('href',href);
+				}
+			</script>	
+			</div>
+	
+			
+			Copyright&copy; <a href="index.html">VRChatワールド紹介サイト</a> All Rights Reserved.</small>
+		<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+
+	</footer>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>
